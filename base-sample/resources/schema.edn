@@ -1,0 +1,31 @@
+{:objects
+ {:User
+  {:fields
+   {:id {:type (non-null ID)
+         :args {:id {:type ID}}}
+    :username {:type String}
+    :games {:type (list :Game)
+            :args {:id {:type ID}}
+            :resolve :User/games}
+    :books {:type (list :Book)
+            :args {:id {:type ID}}
+            :resolve :User/books}}}
+  
+  :Game
+  {:fields
+   {:id {:type (non-null ID)}
+    :name {:type (non-null String)}}}
+  
+  :Book
+  {:fields
+   {:id {:type (non-null ID)}
+    :name {:type (non-null String)}}}}
+ 
+ :queries
+ {:allUsers
+  {:type (list :User)
+   :resolve :Query/allUsers}
+  :userById
+  {:type :User
+   :args {:id {:type ID}}
+   :resolve :Query/userById}}}
