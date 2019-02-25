@@ -1,8 +1,7 @@
 {:objects
  {:User
   {:fields
-   {:id {:type (non-null ID)
-         :args {:id {:type ID}}}
+   {:id {:type (non-null ID)}
     :username {:type String}
     :games {:type (list :Game)
             :args {:id {:type ID}}

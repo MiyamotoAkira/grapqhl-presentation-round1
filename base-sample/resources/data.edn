@@ -1,19 +1,20 @@
-{:users [{:id 1 :username "Name 1"}
-         {:id 2 :username "Name 2"}
-         {:id 3 :username "Name 3"}]
- :gamesUser [{:user-id 1 :game-id 1}
-             {:user-id 1 :game-id 2}
-             {:user-id 2 :game-id 3}
-             {:user-id 3 :game-id 2}]
- :booksUser [{:user-id 1 :book-id 2}
-             {:user-id 2 :book-id 1}
-             {:user-id 2 :book-id 3}
-             {:user-id 3 :book-id 4}
-             {:user-id 3 :book-id 2}]
- :books [{:id 1 :name "Book 1"}
-         {:id 2 :name "Book 2"}
-         {:id 3 :name "Book 3"}
-         {:id 4 :name "Book 4"}]
- :games [{:id 1 :name "Game 1"}
-         {:id 2 :name "Game 2"}
-         {:id 3 :name "Game 3"}]}
+{:users [{:id "1" :username "Name 1"}
+         {:id "2" :username "Name 2"}
+         {:id "3" :username "Name 3"}]
+ :gamesUser [{:user-id "1" :game-id "1"}
+             {:user-id "1" :game-id "2"}
+             {:user-id "2" :game-id "3"}
+             {:user-id "3" :game-id "2"}]
+ :booksUser [{:user-id "1" :book-id "2"}
+             {:user-id "2" :book-id "1"}
+             {:user-id "2" :book-id "3"}
+             {:user-id "3" :book-id "4"}
+             {:user-id "3" :book-id "2"}]
+ :books [{:id "1" :name "Book 1"}
+         {:id "2" :name "Book 2"}
+         {:id "3" :name "Book 3"}
+         {:id "4" :name "Book 4"}]
+ :games [{:id "1" :name "Game 1"}
+         {:id "2" :name "Game 2"}
+         {:id "3" :name "Game 3"}]}
+

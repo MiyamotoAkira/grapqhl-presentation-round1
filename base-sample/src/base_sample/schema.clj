@@ -35,7 +35,7 @@
   []
   (fn [context args _]
     (->> (:users db)
-         (filter #(- (:id args) %))
+         (filter #(= (:id args) %))
          first)))
 
 
