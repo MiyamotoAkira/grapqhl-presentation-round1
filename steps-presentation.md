@@ -1,7 +1,9 @@
-
+C-x C-+ to make font bigger
 ## Terminal
 
 `lein new pedestal-service presentation`
+
+`mkdir presentation/resources`
 
 `cp base-sample/resources/data.edn presentation/resources/` 
 
@@ -64,6 +66,13 @@ Add
             [clojure.edn :as edn])
 ```
 to namespace
+
+Add
+```
+(def db (-> (io/resource "data.edn")
+            slurp
+            edn/read-string))
+```
 
 Add
 ```
@@ -141,3 +150,7 @@ Add
 ## open src/presentation/server.clj
 
 Remove line 21 with routes
+
+## Run app
+`cd presentation`
+`lein run-dev`
