@@ -115,7 +115,6 @@ Add
 (defn get-books
   []
   (fn [context args user]
-    (println args)
     (cond->> (:booksUser db)
       true (filter #(= (:id user) (:user-id %)))
       true (map (fn [book-user] (filter #(= (:id %) (:book-id book-user)) (:books db))))

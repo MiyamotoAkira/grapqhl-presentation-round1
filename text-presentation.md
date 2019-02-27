@@ -28,7 +28,7 @@ But, and a big but here, most APIs that you see out there are light in business 
 
 **Copy schema.clj**
 
-So we reach that point point in which we have a clear separation between REST and GraphQL. The former is about processes, the later is about data.
+So we reach that point in which we have a clear separation between REST and GraphQL. The former is about processes, the later is about data.
 **Copy schema.clj**
 
 There is another big difference, really massive: REST is an architectural style, and that means that there is no implementation of it. Every time you want to create a new REST api you need to start from scratch. You have to define how your API is going to behave, what is available, what are the links that you can use. How do you searches, how do you modify, what http verb you want to use, how do you define the links? You have to create a client from scratch each time. Even if you reuse some libraries there is so much work to do. Which makes sense: Architectural Style. Thefore I have to define the architecture and implementation.
@@ -37,6 +37,10 @@ There is another big difference, really massive: REST is an architectural style,
 
 GraphQL on the other hand is a fixed architecture. Things should work in a very specific way. You don't have to define it. The elements are exactly the same on all GraphQL apis. You have a schema that follows a very specific format. You always need resolvers. You always use POST for everything. And the client is the same, doesn't matter how many apis you make: the difference is the information that is passed in the post, and the information that you retrieve; But the format of both is exactly the same.
 
+Let's gonna see quickly what the running api does
+
 **run api**
 
-And this, this is what makes GraphQL awesome. I  have search capabilities, and some filtering, and can decide what data will come back. All in a few lines of code done in a few minutes
+Let's gonna get all current users, just asking for the id. Now for the username. Let's add books. And now only books that have id 2
+
+And this, this is what makes GraphQL awesome. I  have search capabilities, and some filtering, and can decide what data will come back. All in a few lines of code done in a few minutes (the original sitting on which I wrote the code that I just copy pasted was 15 minutes.
