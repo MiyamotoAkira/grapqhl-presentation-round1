@@ -12,7 +12,7 @@ Let's establish a base of how *I* think. Please raise your hands if you have don
 
 **start repl and change project.clj**
 
-One of the most infuriating things, and is not exclusive to our profession, is that we misuse terms. You have heavy processes from which the dev can't deviate, don't call that Agile. It isn't. Same with REST, if you are ignoring what makes REST REST, then you can't call it REST. Of course, some luminarie came with Restful and Restish to indicate something that isn't REST but you still have the use of the cool term (well, back then, not anymore).
+One of the most infuriating things, and is not exclusive to our profession, is the same for all humanity. Is that we misuse terms. You have heavy processes from which the dev can't deviate, don't call that Agile. It isn't. Same with REST, if you are ignoring what makes REST REST, then you can't call it REST. Of course, some luminarie came with Restful and Restish to indicate something that isn't REST but you still have the use of the cool term (well, back then, not anymore).
 
 ** Copy schema.edn **
 
@@ -20,7 +20,7 @@ How many have read the original Fielding disertation? It is illuminating. Fieldi
 
 **Copy schema.clj**
 
-What about REST in Practice, by Webber, Parastatidis and Robinson? The first time reading that one didn't click (as I was reading it because I was going to work on my first (finger quotes) REST api. But on the second reading, it did. REST is superb to describe business processes. Which is exactly the example that they use to drive the book.
+What about REST in Practice, by Webber, Parastatidis and Robinson? The first time reading that one didn't click (as I was reading it because I was going to work on my first (finger quotes) REST api. But on the second reading, it did. REST is superb to describe business processes. Which is exactly the example that they use to drive the book. Is the businness process of a coffe shop. Incidentally you have data.
 
 **Copy schema.clj**
 
@@ -44,3 +44,5 @@ Let's gonna see quickly what the running api does
 Let's gonna get all current users, just asking for the id. Now for the username. Let's add books. And now only books that have id 2
 
 And this, this is what makes GraphQL awesome. I  have search capabilities, and some filtering, and can decide what data will come back. All in a few lines of code done in a few minutes (the original sitting on which I wrote the code that I just copy pasted was 15 minutes.
+
+
