@@ -35,7 +35,7 @@ There is another big difference, really massive: REST is an architectural style,
 
 **modify service.clj and server.clj**
 
-GraphQL on the other hand is a fixed architecture. Things should work in a very specific way. You don't have to define it. The elements are exactly the same on all GraphQL apis. You have a schema that follows a very specific format. You always need resolvers. You always use POST for everything. And the client is the same, doesn't matter how many apis you make: the difference is the information that is passed in the post, and the information that you retrieve; But the format of both is exactly the same.
+GraphQL on the other hand is a fixed architecture. Things should work in a very specific way. You don't have to define it. The elements are exactly the same on all GraphQL apis. You have a schema that follows a very specific format. You always need resolvers. You always use the single POST request for everything. And the client is the same, doesn't matter how many apis you make: the difference is the information that is passed in the post, and the information that you retrieve; But the format of both is exactly the same.
 
 Let's gonna see quickly what the running api does
 
@@ -43,6 +43,4 @@ Let's gonna see quickly what the running api does
 
 Let's gonna get all current users, just asking for the id. Now for the username. Let's add books. And now only books that have id 2
 
-And this, this is what makes GraphQL awesome. I  have search capabilities, and some filtering, and can decide what data will come back. All in a few lines of code done in a few minutes (the original sitting on which I wrote the code that I just copy pasted was 15 minutes.
-
-
+And this, this is what makes GraphQL awesome. I  have search capabilities, and some filtering, and can decide what data will come back. All in a few lines of code done in a few minutes (the original sitting on which I wrote the code that I just copy pasted was 20 minutes).
